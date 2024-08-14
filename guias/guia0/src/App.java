@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -9,7 +10,7 @@ public class App {
         int ejercicio;
 
         do{
-            System.out.println("Ingrese el ejercicio que desea ver [1-14]: ");
+            System.out.println("Ingrese el ejercicio que desea ver [1-21]: ");
             ejercicio = input.nextInt();
             input.nextLine();
 
@@ -298,7 +299,17 @@ public class App {
 //                Realizar un programa que lea un número entero N de 5 cifras y muestre
 //                las cifras que ocupan posiciones impares.
                 {
+                    System.out.println("Ingrese un numero de 5 cifras: ");
+                    int num = input.nextInt();
+                    String numStr = Integer.toString(num);
 
+                    if(numStr.length() == 5){
+                        System.out.println("En la posicion 1: " + numStr.charAt(0));
+                        System.out.println("En la posicion 3: " + numStr.charAt(2));
+                        System.out.println("En la posicion 5: " + numStr.charAt(4));
+                    } else {
+                        System.out.println("El numero no tiene 5 cifras.");
+                    }
                     break;
                 }
                 case 16:
@@ -306,6 +317,25 @@ public class App {
 //                contienen hora, minutos y segundos respectivamente, y comprueba si la
 //                hora que indican es una hora válida.
                 {
+                    System.out.println("Ingresar la hora: ");
+                    int h = input.nextInt();
+                    input.nextLine();
+                    System.out.println("Ingresar los minutos: ");
+                    int m = input.nextInt();
+                    input.nextLine();
+                    System.out.println("Ingresar los segundos: ");
+                    int s = input.nextInt();
+                    input.nextLine();
+
+                    if(h < 0 || h > 23) {
+                        System.out.println("La hora se encuentra fuera del rango.");
+                    } else if(m < 0 || m > 60) {
+                        System.out.println("Los minutos se encuentran fuera del rango.");
+                    } else if(s < 0 || s > 60){
+                        System.out.println("Los segundos se encuentran fuera del rango");
+                    } else {
+                        System.out.println("La hora ingresada es correcta. " + h + ":" + m + ":" + s);
+                    }
 
                     break;
                 }
@@ -317,7 +347,29 @@ public class App {
 //                  ● Entre 51 y 60 años el salario es un 10 por ciento más
 //                  ● Si es mayor de 60 el salario es un 15 por ciento más
                 {
+                    System.out.println("Ingresar nombre: ");
+                    String nombre = input.nextLine();
+                    System.out.println("Ingresar edad: ");
+                    int edad = input.nextInt();
+                    input.nextLine();
+                    System.out.println("Ingresar el salario");
+                    double salario = input.nextDouble();
+                    input.nextLine();
 
+                    if(edad < 16){
+                        System.out.println("" + nombre + ", no tiene edad para trabajar");
+                    } else if(edad >+ 19 && edad <= 50){
+                        salario *= 1.05;
+                        System.out.println("Salario = " + salario);
+                    } else if(edad >+ 51 && edad <= 60){
+                        salario *= 1.1;
+                        System.out.println("Salario = " + salario);
+                    } else if(edad > 60){
+                        salario *= 1.15;
+                        System.out.println("Salario = " + salario);
+                    } else {
+                        System.out.println("Salario = " + salario);
+                    }
                     break;
                 }
                 case 18:
