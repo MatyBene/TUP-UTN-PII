@@ -272,7 +272,7 @@ public class App {
                     double rad = input.nextDouble();
                     input.nextLine();
 
-                    double vol = 4/3 * Math.PI * Math.pow(rad, 3);
+                    double vol = (4.0/3.0) * Math.PI * Math.pow(rad, 3);
 
                     System.out.println("El volumen de la esfera es de: " + vol);
 
@@ -377,7 +377,37 @@ public class App {
 //                pantalla su índice de masa corporal y si se encuentra en un rango
 //                saludable.
                 {
+                    System.out.println("Ingrese su altura (m): ");
+                    double h = input.nextDouble();
+                    input.nextLine();
+                    System.out.println("Ingrese su peso (kg): ");
+                    double w = input.nextDouble();
+                    input.nextLine();
 
+                    double imc = w / Math.pow(h, 2);
+
+                    if(imc < 18.5){
+                        System.out.println("Bajo peso");
+                        System.out.println("IMC: " + imc);
+                    } else if(imc >= 18.5 && imc <= 24.9){
+                        System.out.println("Peso normal");
+                        System.out.println("IMC: " + imc);
+                    } else if(imc >= 25 && imc <= 29.9){
+                        System.out.println("Sobrepeso");
+                        System.out.println("IMC: " + imc);
+                    } else {
+                        System.out.println("Obesidad");
+                        if(imc >= 30 && imc <= 34.9){
+                            System.out.println("Obesidad grado 1");
+                            System.out.println("IMC: " + imc);
+                        } else if(imc >= 35 && imc <= 39.9){
+                            System.out.println("Obesidad grado 2");
+                            System.out.println("IMC: " + imc);
+                        } else {
+                            System.out.println("Obesidad grado 3");
+                            System.out.println("IMC: " + imc);
+                        }
+                    }
                     break;
                 }
                 case 19:
@@ -385,14 +415,34 @@ public class App {
 //                números enteros. Realizar variantes con arreglos ya inicializados e ingreso
 //                por teclado.
                 {
+                    int cant = 2;
+                    int[] arr = new int[cant];
+                    arr[0] = 6;
+                    arr[1] = 4;
+                    int suma = 0;
+                    double promedio = 0;
 
+                    for(int i = 0; i < cant; i++){
+                        suma += arr[i];
+                    }
+
+                    promedio = (double) suma / cant;
+
+                    System.out.println("promedio = " + promedio);
                     break;
                 }
                 case 20:
 //                Realizar un programa Java que solicite un número al usuario y calcule la
 //                suma de todos los números naturales, hasta el número recibido inclusive.
                 {
-
+                    System.out.println("Ingrese un numero: ");
+                    int num = input.nextInt();
+                    input.nextLine();
+                    int suma = 0;
+                    for(int i = 0; i <= num; i++){
+                        suma += i;
+                    }
+                    System.out.println("Suma: " + suma);
                     break;
                 }
                 case 21:
@@ -400,6 +450,28 @@ public class App {
 //                un mes y calcule el maximo, el minimo y el promedio. Utilizar un array
 //                double.
                 {
+                    int cantT = 4;
+                    double[] temp = new double[cantT];
+                    double suma = 0;
+                    double max = Double.NEGATIVE_INFINITY;
+                    double min = Double.POSITIVE_INFINITY;
+                    double promedio = 0;
+
+                    for(int i = 0; i < cantT; i++) {
+                        System.out.println("Ingresar la temperatura " + (i + 1));
+                        temp[i] = input.nextDouble();
+                        input.nextLine();
+                        suma += temp[i];
+                        max = Math.max(max, temp[i]);
+                        min = Math.min(min, temp[i]);
+                    }
+
+                    promedio = suma / cantT;
+
+                    System.out.println("Suma: " + suma);
+                    System.out.println("promedio = " + promedio);
+                    System.out.println("max = " + max);
+                    System.out.println("min = " + min);
 
                     break;
                 }
