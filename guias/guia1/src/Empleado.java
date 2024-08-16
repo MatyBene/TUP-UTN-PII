@@ -12,6 +12,18 @@ public class Empleado {
         this.salario = salario;
     }
 
+    public double salarioAnual(){
+        return this.salario * 12;
+    }
+
+    public void aumentarSalario(double porcentaje){
+        this.salario *= (1 + (porcentaje / 100));
+    }
+
+    public void imprimirEmpleado(){
+        System.out.println("Empleado[dni=" + this.dni + ", nombre=" + this.nombre + ", apellido=" + this.apellido + ", salario=" + this.salario + "]");
+    }
+
     public String getDni() {
         return dni;
     }

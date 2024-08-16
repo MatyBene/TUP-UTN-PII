@@ -32,6 +32,16 @@ public class App {
 //                        d. Aumente el salario del empleado Carlos en un 15% e imprima en pantalla el
 //                        salario anual del mismo.
                 {
+                    // a
+                    Empleado emp1 = new Empleado("23456345", "Carlos", "Gutiérrez", 25000);
+                    // b
+                    Empleado emp2 = new Empleado("34234123", "Ana", "Sánchez", 27500);
+                    // c
+                    emp1.imprimirEmpleado();
+                    emp2.imprimirEmpleado();
+                    // d
+                    emp1.aumentarSalario(15);
+                    System.out.println("El salario despues del aumento es: " + emp1.getSalario());
                     break;
                 }
                 case 2:
@@ -54,6 +64,14 @@ public class App {
 //                        5. Imprima por pantalla los valores de la cuenta y verifique que el
 //                        balance sea correcto.
                 {
+                    CuentaBancaria cuenta1 = new CuentaBancaria("m666", "Matias", 15000);
+
+                    cuenta1.credito(2500);
+                    cuenta1.debito(1500);
+                    cuenta1.debito(30000);
+
+                    cuenta1.imprimirCuenta();
+
                     break;
                 }
                 case 3:
@@ -86,6 +104,23 @@ public class App {
 //                        g. Incrementa en 5 la cantidad de copias disponibles del segundo libro.
 //                        h. Imprime los detalles del segundo libro.
                 {
+                    // a
+                    Libro libro1 = new Libro("El Quijote", "Miguel de Cervantes", 500, 10);
+                    // b
+                    Libro libro2 = new Libro("Cien Años de Soledad", "Gabriel García Márquez", 700, 5);
+                    // c
+                    libro1.imprimirLibro();
+                    libro2.imprimirLibro();
+                    // d
+                    libro1.venderLibros(3);
+                    // e
+                    libro1.imprimirLibro();
+                    // f
+                    libro2.venderLibros(8);
+                    // g
+                    libro2.agregarCopias(5);
+                    // h
+                    libro2.imprimirLibro();
                     break;
                 }
                 case 4:
