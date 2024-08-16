@@ -9,7 +9,7 @@ public class App {
         int ejercicio;
 
         do{
-            System.out.println("Ingrese el ejercicio que desea ver [1-21]: ");
+            System.out.println("Ingrese el ejercicio que desea ver [1-4]: ");
             ejercicio = input.nextInt();
             input.nextLine();
 
@@ -147,6 +147,46 @@ public class App {
 //                        5. Imprime el precio total calculado por el método calcularPrecioTotal().
 //                        6. Sale del programa.
                 {
+                    String control;
+
+                    do {
+                        System.out.println("Ingrese el numero de operacion que desea realizar: ");
+                        System.out.println("1. Agregar producto.");
+                        System.out.println("2. Imprimir producto.");
+                        System.out.println("3. Actualizar cantidad del producto.");
+                        System.out.println("4. Actualizar el precio unitario del producto.");
+                        System.out.println("5. Imprimir el precio total.");
+                        System.out.println("6. Salir del programa.");
+                        int ope = input.nextInt();
+                        input.nextLine();
+
+                        switch(ope){
+                            case 1:
+                                ItemVenta item1 = new ItemVenta(6, "coca", 12, 2200);
+                                break;
+                            case 2:
+                                item1.imprimirItem();
+                                break;
+                            case 3:
+                                System.out.println("Ingrese la nueva cantidad del producto: ");
+                                int cant = input.nextInt();
+                                input.nextLine();
+                                item1.setCantidad(cant);
+                                break;
+                            case 4:
+                                System.out.println("Ingrese el nuevo precio unitario del producto: ");
+                                double nuevoPrecio = input.nextDouble();
+                                input.nextLine();
+                                item1.setPrecioUnitario(nuevoPrecio);
+                                break;
+                            case 5:
+                                break;
+                            case 6:
+                                break;
+                            default:
+                                break;
+                        }
+                    } while(control.equals("s"));
                     break;
                 }
                 default:
