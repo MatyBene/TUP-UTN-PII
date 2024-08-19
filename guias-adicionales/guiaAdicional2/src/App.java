@@ -205,7 +205,12 @@ public class App {
 //                    Calcular e imprimir la tabla de multiplicar de un número cualquiera. Imprimir
 //                    el multiplicando, el multiplicador y el producto.
                 {
-
+                    System.out.println("Ingrese el numero para conocer su tabla de multiplicar: ");
+                    int num = input.nextInt();
+                    input.nextLine();
+                    for(int i = 1; i <= 10; i++){
+                        System.out.println("" + i + " X " + num + " = " + (num * i));
+                    }
                     break;
                 }
                 // Extra
