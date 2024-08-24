@@ -32,5 +32,7 @@ public class App {
             seguir = input.nextLine();
 
         } while(seguir.equals("s"));
+
+        input.close();
     }
 }
