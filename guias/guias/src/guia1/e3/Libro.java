@@ -1,3 +1,5 @@
+package guia1.e3;
+
 public class Libro {
 
     private static int idCont = 1;
@@ -67,3 +69,4 @@ public class Libro {
         this.cantCopias = cantCopias;
     }
 }
+

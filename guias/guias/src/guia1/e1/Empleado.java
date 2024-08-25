@@ -1,3 +1,5 @@
+package guia1.e1;
+
 public class Empleado {
 
     private String dni;
@@ -56,3 +58,4 @@ public class Empleado {
         this.salario = salario;
     }
 }
+

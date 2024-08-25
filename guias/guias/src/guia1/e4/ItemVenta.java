@@ -1,3 +1,5 @@
+package guia1.e4;
+
 public class ItemVenta {
 
     private int identificador;
@@ -52,3 +54,4 @@ public class ItemVenta {
         this.precioUnitario = precioUnitario;
     }
 }
+

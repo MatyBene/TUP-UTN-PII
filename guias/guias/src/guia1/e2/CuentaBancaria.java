@@ -1,3 +1,5 @@
+package guia1.e2;
+
 public class CuentaBancaria {
 
     private String id;
@@ -54,3 +56,4 @@ public class CuentaBancaria {
         this.balance = balance;
     }
 }
+
