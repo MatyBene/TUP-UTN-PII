@@ -1,5 +1,6 @@
 import guiaAdicional1.G1;
 import guiaAdicional2.G2;
+import guiaAdicional3.G3;
 
 import java.util.Scanner;
 
@@ -22,6 +23,9 @@ public class App {
                     break;
                 case 2:
                     G2.ejecutar(input);
+                    break;
+                case 3:
+                    G3.ejecutar(input);
                     break;
                 default:
                     System.out.println("Numero de operacion incorrecto");
