@@ -41,12 +41,12 @@ public class G5 {
                 case 8:
                     E8.ejecutar(input);
                     break;
-//                case 9:
-//                    E9.ejecutar();
-//                    break;
-//                case 10:
-//                    E10.ejecutar(input);
-//                    break;
+                case 9:
+                    E9.ejecutar(input);
+                    break;
+                case 10:
+                    E10.ejecutar(input);
+                    break;
 //                case 11:
 //                    E11.ejecutar(input);
 //                    break;
