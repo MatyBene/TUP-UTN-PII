@@ -1,5 +1,9 @@
 package guia2;
 
+import guia2.e1.E1;
+import guia2.e2.E2;
+import guia2.e3.E3;
+
 import java.util.Scanner;
 
 public class G2 {
@@ -15,13 +19,13 @@ public class G2 {
 
             switch (ejercicio) {
                 case 1:
-
+                    E1.ejecutar(input);
                     break;
                 case 2:
-
+                    E2.ejecutar(input);
                     break;
                 case 3:
-
+                    E3.ejecutar(input);
                     break;
                 case 4:
 

@@ -13,7 +13,7 @@ public class App {
         int guia;
 
         do {
-            System.out.println("Ingrese la guia adicional que desea ver [0-2]: ");
+            System.out.println("Ingrese la guia que desea ver [0-2]: ");
             guia = input.nextInt();
             input.nextLine();
 

@@ -2,15 +2,12 @@ package guia2.e1.empleados;
 
 public class EmpleadoContratista extends Empleado {
 
-    private double horasTrabajadas;
+    private int horasTrabajadas;
     private double pagoPorHora;
     private double pagoPorProyecto;
 
-    public EmpleadoContratista() {
-    }
-
-    public EmpleadoContratista(String nombre, double salario, double horasTrabajadas, double pagoPorHora, double pagoPorProyecto) {
-        super(nombre, salario);
+    public EmpleadoContratista(String nombre, int horasTrabajadas, double pagoPorHora, double pagoPorProyecto) {
+        super(nombre, (horasTrabajadas * pagoPorHora) + pagoPorProyecto);
         this.horasTrabajadas = horasTrabajadas;
         this.pagoPorHora = pagoPorHora;
         this.pagoPorProyecto = pagoPorProyecto;
