@@ -1,5 +1,9 @@
 # Programacion II
 
+## Desktop.zip
+
+archivo .zip que contiene la guia adicional 6 y la guia 2
+
 ## Guia adicional 6
 
 ### Ejercicio 1
