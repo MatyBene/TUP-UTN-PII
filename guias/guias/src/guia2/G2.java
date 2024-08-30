@@ -3,6 +3,8 @@ package guia2;
 import guia2.e1.E1;
 import guia2.e2.E2;
 import guia2.e3.E3;
+import guia2.e4.E4;
+import guia2.e5.E5;
 
 import java.util.Scanner;
 
@@ -28,10 +30,10 @@ public class G2 {
                     E3.ejecutar(input);
                     break;
                 case 4:
-
+                    E4.ejecutar(input);
                     break;
                 case 5:
-
+                    E5.ejecutar(input);
                     break;
                 default:
                     System.out.println("Numero de operacion incorrecto");
