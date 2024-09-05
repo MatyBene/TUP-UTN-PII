@@ -5,6 +5,8 @@ public class Tranvia implements ITransporte {
     private String ruta;
     private int capacidad;
     private TipoTransporte tipo;
+    private String via;
+    private boolean estado;
 
     public Tranvia(String ruta, int capacidad) {
         this.ruta = ruta;
@@ -13,7 +15,7 @@ public class Tranvia implements ITransporte {
     }
 
     public void cambiarVia(int nuevaVia){
-
+        this.via = via;
     }
 
     @Override

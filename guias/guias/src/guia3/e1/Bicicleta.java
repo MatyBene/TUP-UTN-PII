@@ -4,9 +4,11 @@ public class Bicicleta implements ITransporte {
 
     private String numeroSerie;
     private TipoTransporte tipo;
+    private int alturaAsiento;
+    private boolean estado;
 
     public void ajustarAsiento(int altura){
-
+        this.alturaAsiento = altura;
     }
 
     public Bicicleta(String numeroSerie) {
