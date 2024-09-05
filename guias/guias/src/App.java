@@ -1,6 +1,7 @@
 import guia0.G0;
 import guia1.G1;
 import guia2.G2;
+import guia3.G3;
 
 import java.util.Scanner;
 
@@ -13,7 +14,7 @@ public class App {
         int guia;
 
         do {
-            System.out.println("Ingrese la guia que desea ver [0-2]: ");
+            System.out.println("Ingrese la guia que desea ver [0-3]: ");
             guia = input.nextInt();
             input.nextLine();
 
@@ -26,6 +27,9 @@ public class App {
                     break;
                 case 2:
                     G2.ejecutar(input);
+                    break;
+                case 3:
+                    G3.ejecutar(input);
                     break;
                 default:
                     System.out.println("Numero de operacion incorrecto");

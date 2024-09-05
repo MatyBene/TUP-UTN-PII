@@ -11,7 +11,7 @@ public class G3 {
         int ejercicio;
 
         do{
-            System.out.println("Ingrese el ejercicio que desea ver [1-5]: ");
+            System.out.println("Ingrese el ejercicio que desea ver [1-3]: ");
             ejercicio = input.nextInt();
             input.nextLine();
 

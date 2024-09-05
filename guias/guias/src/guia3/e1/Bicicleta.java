@@ -1,6 +1,6 @@
 package guia3.e1;
 
-public class Bicicleta implements Transporte{
+public class Bicicleta implements ITransporte {
 
     private String numeroSerie;
     private TipoTransporte tipo;
@@ -9,23 +9,28 @@ public class Bicicleta implements Transporte{
 
     }
 
-    public Bicicleta(String numeroSerie, TipoTransporte tipo) {
+    public Bicicleta(String numeroSerie) {
         this.numeroSerie = numeroSerie;
-        this.tipo = tipo;
+        this.tipo = TipoTransporte.BICICLETA;
     }
 
     @Override
     public void arrancar() {
-
+        System.out.println("Arranca la " + this.tipo);
     }
 
     @Override
     public void detener() {
-
+        System.out.println("Se detiene la " + this.tipo);
     }
 
     @Override
     public int obtenerCapacidad() {
         return 1;
+    }
+
+    @Override
+    public void obtenerEstado() {
+
     }
 }
