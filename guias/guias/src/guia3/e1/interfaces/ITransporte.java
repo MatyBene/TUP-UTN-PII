@@ -1,4 +1,4 @@
-package guia3.e1;
+package guia3.e1.interfaces;
 
 public interface ITransporte {
 
