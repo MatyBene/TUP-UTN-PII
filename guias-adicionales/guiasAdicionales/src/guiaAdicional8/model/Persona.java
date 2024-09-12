@@ -1,6 +1,6 @@
 package guiaAdicional8.model;
 
-public class Persona {
+public class Persona implements Comparable<Persona>{
 
     private String nombre;
     private int edad;
@@ -13,6 +13,20 @@ public class Persona {
         this.nombre = nombre;
         this.edad = edad;
         this.profesion = profesion;
+    }
+
+    @Override
+    public int compareTo(Persona p) {
+        return Integer.compare(this.edad, p.getEdad());
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", profesion='" + profesion + '\'' +
+                '}';
     }
 
     public String getNombre() {
