@@ -6,6 +6,12 @@ import java.util.ArrayList;
 
 public class PersonaService {
 
+    public static void mostrarPersonas(ArrayList<Persona> personas) {
+        for (Persona persona : personas) {
+            System.out.println(persona);
+        }
+    }
+
     public static void agregarPersona(ArrayList<Persona> personas, Persona persona) {
         personas.add(persona);
     }
@@ -43,5 +49,23 @@ public class PersonaService {
     public static int conteoPersonas(ArrayList<Persona> personas) {
 
         return personas.size();
+    }
+
+    public static ArrayList<Persona> listadoPorProfesion(ArrayList<Persona> personas, String profesion) {
+        ArrayList<Persona> personasProfesion = new ArrayList<>();
+
+        for (Persona persona : personas) {
+            if(persona.getProfesion().equals(profesion)) {
+                personasProfesion.add(persona);
+            }
+        }
+
+        return personasProfesion;
+    }
+
+    public static void vaciarListado(ArrayList<Persona> personas) {
+        for (Persona persona : personas) {
+            personas.remove(persona);
+        }
     }
 }

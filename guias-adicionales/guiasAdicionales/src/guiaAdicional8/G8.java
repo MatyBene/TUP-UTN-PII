@@ -85,7 +85,21 @@ public class G8 {
 
                     break;
                 case 7:
-                    
+
+                    System.out.println("Ingrese la profesion: ");
+                    profesion = input.nextLine();
+
+                    ArrayList personasProfesion = PersonaService.listadoPorProfesion(personas, profesion);
+
+                    PersonaService.mostrarPersonas(personasProfesion);
+
+                    break;
+                case 9:
+
+                    PersonaService.vaciarListado(personas);
+
+                    System.out.println("El listado de personas se vacio.");
+
                     break;
                 case 10:
                     seguir = false;
