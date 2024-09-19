@@ -56,6 +56,20 @@ public class BibliotecaService {
         Collections.sort(catalogo, new ComparadorXAnio());
     }
 
+    public List<Libro> filtrarLibrosXGenero(Genero genero){
+        ArrayList<Libro> librosFiltrados = new ArrayList<>();
+
+        for(Material m : catalogo){
+            if(m instanceof Libro l){
+                if(l.getGenero().equals(genero)){
+                    librosFiltrados.add(l);
+                }
+            }
+        }
+
+        return librosFiltrados;
+    }
+
 
 
 }
