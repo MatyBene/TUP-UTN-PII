@@ -1,10 +1,13 @@
 package Services;
 
+import Enums.Genero;
+import Models.Libro;
 import Models.Material;
 import Utils.ComparadorXAnio;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class BibliotecaService {
 
