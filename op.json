@@ -1,0 +1,141 @@
+[
+    {
+      "name": "Luffy",
+      "bounty": 1500000000.0,
+      "image": "http://ejemplo.com/luffy.jpg",
+      "max_health": 300000000.0
+    },
+    {
+      "name": "Alvida",
+      "bounty": 5000000.0,
+      "image": "http://ejemplo.com/alvida.jpg",
+      "max_health": 1000000.0
+    },
+    {
+      "name": "Morgan",
+      "bounty": 10000000.0,
+      "image": "http://ejemplo.com/morgan.jpg",
+      "max_health": 2000000.0
+    },
+    {
+      "name": "Buggy",
+      "bounty": 15000000.0,
+      "image": "http://ejemplo.com/buggy.jpg",
+      "max_health": 3000000.0
+    },
+    {
+      "name": "Kuro",
+      "bounty": 20000000.0,
+      "image": "http://ejemplo.com/kuro.jpg",
+      "max_health": 4000000.0
+    },
+    {
+      "name": "Don Krieg",
+      "bounty": 30000000.0,
+      "image": "http://ejemplo.com/don_krieg.jpg",
+      "max_health": 6000000.0
+    },
+    {
+      "name": "Arlong",
+      "bounty": 200000000.0,
+      "image": "http://ejemplo.com/arlong.jpg",
+      "max_health": 40000000.0
+    },
+    {
+      "name": "Smoker",
+      "bounty": 50000000.0,
+      "image": "http://ejemplo.com/smoker.jpg",
+      "max_health": 10000000.0
+    },
+    {
+      "name": "Galdino",
+      "bounty": 10000000.0,
+      "image": "http://ejemplo.com/galdino.jpg",
+      "max_health": 2000000.0
+    },
+    {
+      "name": "Wapol",
+      "bounty": 20000000.0,
+      "image": "http://ejemplo.com/wapol.jpg",
+      "max_health": 4000000.0
+    },
+    {
+      "name": "Crocodile",
+      "bounty": 81000000.0,
+      "image": "http://ejemplo.com/crocodile.jpg",
+      "max_health": 16200000.0
+    },
+    {
+      "name": "Enel",
+      "bounty": 50000000.0,
+      "image": "http://ejemplo.com/enel.jpg",
+      "max_health": 10000000.0
+    },
+    {
+      "name": "Rob Lucci",
+      "bounty": 100000000.0,
+      "image": "http://ejemplo.com/rob_lucci.jpg",
+      "max_health": 20000000.0
+    },
+    {
+      "name": "Gecko Moria",
+      "bounty": 32000000.0,
+      "image": "http://ejemplo.com/gecko_moria.jpg",
+      "max_health": 6400000.0
+    },
+    {
+      "name": "Bartholomew Kuma",
+      "bounty": 200000000.0,
+      "image": "http://ejemplo.com/kuma.jpg",
+      "max_health": 40000000.0
+    },
+    {
+      "name": "Magellan",
+      "bounty": 200000000.0,
+      "image": "http://ejemplo.com/magellan.jpg",
+      "max_health": 40000000.0
+    },
+    {
+      "name": "Hody Jones",
+      "bounty": 40000000.0,
+      "image": "http://ejemplo.com/hody.jpg",
+      "max_health": 8000000.0
+    },
+    {
+      "name": "Caesar",
+      "bounty": 50000000.0,
+      "image": "http://ejemplo.com/caesar.jpg",
+      "max_health": 10000000.0
+    },
+    {
+      "name": "Don Flamingo",
+      "bounty": 340000000.0,
+      "image": "http://ejemplo.com/don_flamingo.jpg",
+      "max_health": 68000000.0
+    },
+    {
+      "name": "Katakuri",
+      "bounty": 1000000000.0,
+      "image": "http://ejemplo.com/katakuri.jpg",
+      "max_health": 200000000.0
+    },
+    {
+      "name": "Big Mom",
+      "bounty": 1000000000.0,
+      "image": "http://ejemplo.com/big_mom.jpg",
+      "max_health": 200000000.0
+    },
+    {
+      "name": "Kaido",
+      "bounty": 4000000000.0,
+      "image": "http://ejemplo.com/kaido.jpg",
+      "max_health": 800000000.0
+    },
+    {
+      "name": "Teach",
+      "bounty": 2200000000.0,
+      "image": "http://ejemplo.com/teach.jpg",
+      "max_health": 440000000.0
+    }
+  ]
+  
