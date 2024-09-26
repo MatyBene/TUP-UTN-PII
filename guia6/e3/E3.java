@@ -11,7 +11,11 @@ public class E3 {
         System.out.println("Suma: " + calculadoraEnteros.sumar());
         System.out.println("Resta: " + calculadoraEnteros.restar());
         System.out.println("Multiplicacion: " + calculadoraEnteros.multiplicar());
-        System.out.println("Division: " + calculadoraEnteros.dividir());
+        try{
+            System.out.println("Division: " + calculadoraEnteros.dividir());
+        } catch(ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
         System.out.println("------------------------------");
 
         System.out.println("-- Calculadora de double --");
@@ -20,7 +24,11 @@ public class E3 {
         System.out.println("Suma: " + calculadoraDoubles.sumar());
         System.out.println("Resta: " + calculadoraDoubles.restar());
         System.out.println("Multiplicacion: " + calculadoraDoubles.multiplicar());
-        System.out.println("Division: " + calculadoraDoubles.dividir());
+        try{
+            System.out.println("Division: " + calculadoraDoubles.dividir());
+        } catch(ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
         System.out.println("------------------------------");
 
 
