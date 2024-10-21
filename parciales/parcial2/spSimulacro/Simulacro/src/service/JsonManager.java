@@ -118,8 +118,10 @@ public class JsonManager {
         for(int i = 0; i < jEmbalajes.length(); i++){
             try{
                 JSONObject jEmbalaje = jEmbalajes.getJSONObject(i);
-                Embalaje emb = new Embalaje();
-                emb = mapeoEmbalaje(jEmbalaje, emb);
+                Embalaje emb = new Embalaje(jEmbalaje.getString("tipo"),
+                                            jEmbalaje.getString("resistencia"),
+                                            jEmbalaje.getString("dimensiones"));
+//                emb = mapeoEmbalaje(jEmbalaje, emb);
                 embalajes.add(emb);
             } catch (JSONException e) {
                 throw new RuntimeException(e);
@@ -129,16 +131,16 @@ public class JsonManager {
         return embalajes;
     }
 
-    public static Embalaje mapeoEmbalaje(JSONObject jEmbalaje, Embalaje embalaje) {
-        try {
-            embalaje.setTipo(jEmbalaje.getString("tipo"));
-            embalaje.setResistencia(jEmbalaje.getString("resistencia"));
-            embalaje.setDimensiones(jEmbalaje.getString("dimensiones"));
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
-        }
-
-        return embalaje;
-    }
+//    public static Embalaje mapeoEmbalaje(JSONObject jEmbalaje, Embalaje embalaje) {
+//        try {
+//            embalaje.setTipo(jEmbalaje.getString("tipo"));
+//            embalaje.setResistencia(jEmbalaje.getString("resistencia"));
+//            embalaje.setDimensiones(jEmbalaje.getString("dimensiones"));
+//        } catch (JSONException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+//        return embalaje;
+//    }
 
 }
