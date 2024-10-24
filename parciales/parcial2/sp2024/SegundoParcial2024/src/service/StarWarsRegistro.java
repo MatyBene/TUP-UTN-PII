@@ -1,5 +1,6 @@
 package service;
 
+import exception.PersonajeNoEncontrado;
 import model.Personaje;
 
 import java.util.ArrayList;
@@ -14,14 +15,16 @@ public class StarWarsRegistro<T extends Personaje>{
     }
 
     public void agregarPersonaje(T personaje){
-        if(obtenerPersonajePorNombre(personaje.getNombre()) == null){
-            this.lista.add(personaje);
-        } else {
+        try {
+            obtenerPersonajePorNombre(personaje.getNombre());
+
             System.out.println("El personaje ya existe.");
+        } catch (PersonajeNoEncontrado e) {
+            this.lista.add(personaje);
         }
     }
 
-    public T obtenerPersonajePorNombre(String nombre){
+    public T obtenerPersonajePorNombre(String nombre) throws PersonajeNoEncontrado {
         for(T p : lista){
             if(p instanceof Personaje){
                 if(p.getNombre().equals(nombre)){
@@ -30,14 +33,17 @@ public class StarWarsRegistro<T extends Personaje>{
             }
         }
 
-        return null;
+        throw new PersonajeNoEncontrado("El personaje con el nombre: " + nombre + ", no se encuentra en la base de datos");
     }
 
     public void eliminarPersonaje(T personaje){
-        if(obtenerPersonajePorNombre(personaje.getNombre()) != null){
+        try {
+            obtenerPersonajePorNombre(personaje.getNombre());
+
             this.lista.remove(personaje);
-            System.out.println("El personaje se elimino.");
-        } else {
+
+            System.out.println("El personaje se eliminó.");
+        } catch (PersonajeNoEncontrado e) {
             System.out.println("El personaje no existe.");
         }
     }
